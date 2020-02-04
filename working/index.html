@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Page</title>
+        <style>
+            body {
+                display: block;
+                background-color: #000000;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+            header {
+                background-color: #24292e;
+                padding: 10px 10px 0;
+                color: #ffffff;
+            }
+            nav {
+                display: flex;
+                background-color: #24292e;
+                color: #ffffff;
+            }
+            article {
+                background-color: #ffffff;
+                margin-bottom: 5px;
+                padding: 10px
+            }
+            ul {
+                margin: 10px 0;
+            }
+            li {
+                display: inline;
+                margin-right: 10px;
+                color: hsla(0, 0%, 100%, 0.75);
+            }
+            h1 {
+                margin: 0;
+            }
+            .article-title {
+                border-bottom: solid 2px #c2c2c5;
+                font-size: 18px;
+            }
+            .article-block {
+                margin: 10px;
+            }
+            .article-block__attention {
+                font-size: 13px;
+                color: #24292e;
+            }
+            .article-block__table {
+                display: table;
+            }
+            .article-block__table-row {
+                display: table-row;
+                padding: 10px;
+            }
+            .article-block__table-cell {
+                display: table-cell;
+                padding: 2px 3px 0;
+            }
+            .article-block__table-cell.table__head {
+                border-top: solid 1px;
+                border-bottom: solid 1px;
+                border-right: solid 1px;
+                background-color: #d4d2d2;
+                padding: 1px 3px;
+                text-align: center;
+            }
+            .article-block__table-cell.table__head:first-child {
+                border-left: solid 1px;
+            }
+            .article-block__table-cell.table__col {
+                border-bottom: solid 1px;
+                border-right: solid 1px;
+                text-align: center;
+            }
+            .article-block__table-cell.table__col.text-left {
+                text-align: left;
+            }
+            .article-block__table-cell.table__col:first-child {
+                border-left: solid 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>お仕事</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>職務要約</li>
+                <li>職務経歴</li>
+                <li>言語(フレームワーク)</li>
+                <li>スキルマップ</li>
+                <li>副業</li>
+            </ul>
+
+        </nav>
+        <article id="summary">
+            <div class="article-title">職務要約</div>
+            <div class="article-block">
+                株式会社サイサン 2007.04 ~ 2007.10
+                　営業
+                SES(1社目) 2009.03 ~ 2014.06
+                　請負および客先常駐
+                SES(2社目) 2014.06 ~ 現在
+                　客先常駐
+            </div>
+        </article>
+        <article id="career">
+            <div class="article-title">職務経歴</div>
+            <div class="article-block">
+                2014.06 ~ 現在
+                ポータルサイト保守開発
+            </div>
+        </article>
+        <article id="lang">
+            <div class="article-title">言語(フレームワーク)</div>
+            <div class="article-block">
+                <div class="article-block">
+                    <div class="article-block__table">
+                        <div class="article-block__table-row">
+                            <div class="article-block__table-cell table__head">言語(フレームワーク)</div>
+                            <div class="article-block__table-cell table__head">総期間</div>
+                        </div>
+                        <div class="article-block__table-row">
+                            <div class="article-block__table-cell table__col text-left">PHP(Yii/Yii2)</div>
+                            <div class="article-block__table-cell table__col">7年</div>
+                        </div>
+                        <div class="article-block__table-row">
+                            <div class="article-block__table-cell table__col text-left">JavaScript</div>
+                            <div class="article-block__table-cell table__col">5年</div>
+                        </div>
+                        <div class="article-block__table-row">
+                            <div class="article-block__table-cell table__col text-left">TypeScript(React/Redux)</div>
+                            <div class="article-block__table-cell table__col">1.5年</div>
+                        </div>
+                        <div class="article-block__table-row">
+                            <div class="article-block__table-cell table__col text-left">Go</div>
+                            <div class="article-block__table-cell table__col">0.5年</div>
+                        </div>
+                        <div class="article-block__table-row">
+                            <div class="article-block__table-cell table__col text-left">Java(Spring/Struts)</div>
+                            <div class="article-block__table-cell table__col">3年</div>
+                        </div>
+                        <div class="article-block__table-row">
+                            <div class="article-block__table-cell table__col text-left">Flex</div>
+                            <div class="article-block__table-cell table__col">0.5年</div>
+                        </div>
+                        <div class="article-block__table-row">
+                            <div class="article-block__table-cell table__col text-left">ActionScript</div>
+                            <div class="article-block__table-cell table__col">1年</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article id="skill">
+            <div class="article-title">スキルマップ</div>
+            <div class="article-block">
+                <div class="article-block">
+                    <div class="article-block__table">
+                        <div class="article-block__table-row">
+                            <div class="article-block__table-cell table__head">PHP</div>
+                            <div class="article-block__table-cell table__head">JavaScript</div>
+                            <div class="article-block__table-cell table__head">TypeScript</div>
+                            <div class="article-block__table-cell table__head">HTML</div>
+                            <div class="article-block__table-cell table__head">CSS</div>
+                            <div class="article-block__table-cell table__head">Java</div>
+                            <div class="article-block__table-cell table__head">SQL</div>
+                            <div class="article-block__table-cell table__head">要件定義</div>
+                            <div class="article-block__table-cell table__head">基本設計</div>
+                            <div class="article-block__table-cell table__head">詳細設計</div>
+                            <div class="article-block__table-cell table__head">スクラム</div>
+                            <div class="article-block__table-cell table__head">モブプロ</div>
+                        </div>
+                        <div class="article-block__table-row">
+                            <div class="article-block__table-cell table__col">◎</div>
+                            <div class="article-block__table-cell table__col">◎</div>
+                            <div class="article-block__table-cell table__col">◎</div>
+                            <div class="article-block__table-cell table__col">○</div>
+                            <div class="article-block__table-cell table__col">○</div>
+                            <div class="article-block__table-cell table__col">△</div>
+                            <div class="article-block__table-cell table__col">◎</div>
+                            <div class="article-block__table-cell table__col">○</div>
+                            <div class="article-block__table-cell table__col">○</div>
+                            <div class="article-block__table-cell table__col">○</div>
+                            <div class="article-block__table-cell table__col">◎</div>
+                            <div class="article-block__table-cell table__col">◎</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-block__attention">
+                    ★: エース
+                    ◎: メイン
+                    ○: サブ
+                    △: 経験あり
+                    ※: 興味あり
+                </div>
+            </div>
+        </article>
+        <article id="conditions">
+            <div class="article-title">副業:</div>
+            <div class="article-block">
+                <div class="article-block__table">
+                    <div class="article-block__table-row">
+                        <div class="article-block__table-cell">職種:</div>
+                        <div class="article-block__table-cell">バックエンドエンジニア / フロントエンドエンジニア</div>
+                    </div>
+                    <div class="article-block__table-row">
+                        <div class="article-block__table-cell">就業形態:</div>
+                        <div class="article-block__table-cell">リモート希望 ※要相談</div>
+                    </div>
+                    <div class="article-block__table-row">
+                        <div class="article-block__table-cell">就業時間:</div>
+                        <div class="article-block__table-cell">週5~10時間程度(平日夜間 or 日曜日) ※要相談</div>
+                    </div>
+                    <div class="article-block__table-row">
+                        <div class="article-block__table-cell">単価:</div>
+                        <div class="article-block__table-cell">経験に応じ ※要相談</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer></footer>
+    </body>
+</html>
